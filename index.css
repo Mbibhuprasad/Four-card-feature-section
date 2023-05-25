@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&family=Outfit:wght@300&family=Poppins:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --back-ground:hsl(0, 0%, 98%);
+    --first-border:hsl(180, 62%, 55%);
+    --sec-border:hsl(0, 78%, 62%);
+    --third-border:hsl(34, 97%, 64%);
+    --fourth-border:hsl(212, 86%, 64%);
+    --secd-head:hsl(234, 12%, 34%);
+    --paragf:hsl(225, 3%, 52%);
+    --white:white;
+}
+
+body {
+    font-family: Poppins;
+    background-color:var(--back-ground);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 98vh;
+}
+
+.total {
+    flex-basis: 50rem;
+}
+
+.content {
+    text-align: center;
+    max-width: 25rem;
+    margin: auto;
+}
+
+#first-head {
+    font-size: 1.7rem;
+    opacity: 0.6;
+}
+
+#second-head {
+    font-size: 1.7rem;
+    color: var(--secd-head);
+}
+
+.content p {
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+    color: var(--paragf);
+}
+
+.container {
+    margin-top: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container div:not(.column2) {
+    background-color: var(--white);
+    width: 17.5rem;
+    height: 12.5rem;
+    margin: 1rem;
+    position: relative;
+    padding: 1.5rem;
+    border-radius: 0.3rem;
+    box-shadow: 1px 3px 10px rgb(214, 214, 214);
+}
+
+.container h1 {
+    font-size: 1rem;
+    color: var(--secd-head);
+}
+
+.container p {
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    color: var(--paragf);
+}
+
+.container img {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    width: 3rem;
+}
+
+.first-box {
+    border-top: 3.5px solid var(--first-border);
+}
+
+.secnd-box {
+    border-top: 3.5px solid var(--sec-border);
+}
+
+.third-box {
+    border-top: 3.5px solid var(--third-border);
+    margin-top: 1rem;
+}
+
+.fourth-box {
+    border-top: 3.5px solid var(--fourth-border);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} 
+
+@media screen and (max-width:930px) {
+    .container {
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .content {
+        margin: 1rem auto;
+    }
+
+    main {
+        height: 100%;
+    }
+ 
+}
